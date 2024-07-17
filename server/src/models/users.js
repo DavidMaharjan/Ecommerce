@@ -6,10 +6,16 @@ const userSchema = new Schema({
   phoneNO:Number,
   email:String,
   password:String,
-  Gender:String,
+  confirmPassword: String,
+  gender: {
+    type: String,
+    enum : ['Male','Female','Others'],
+    default: 'Male'
+},
   Birthday:Date
 
 });
 
 const User = mongoose.model('User', userSchema);
 module.exports = User
+
