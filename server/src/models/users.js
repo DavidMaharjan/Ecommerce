@@ -11,7 +11,7 @@ const userSchema = new Schema({
     enum : ['Male','Female','Others'],
     default: 'Male'
 },
-  Birthday:Date
+ 
 
 });
 

@@ -12,7 +12,7 @@ const SignupForm = () => {
       password: '',
       phoneNO: '',
       gender: '',
-      Birthdate: ''
+      //Birthdate: ''
     },
     onSubmit: values => {
      registerUser(values)
@@ -58,14 +58,7 @@ const SignupForm = () => {
         onChange={formik.handleChange}
         value={formik.values.gender}
       />
-         <label htmlFor="birthdate">Birthdate</label>
-      <Input
-        id="Birthdate"
-        name="birthdate"
-        type="date"
-        onChange={formik.handleChange}
-        value={formik.values.Birthdate}
-      />
+        
       <Button type="submit">Submit</Button>
     </form>
     </Card>
