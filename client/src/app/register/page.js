@@ -10,7 +10,7 @@ const SignupForm = () => {
       name: '',
       email: '',
       password: '',
-      phoneNO: '',
+      phoneNo: '',
       gender: '',
       //Birthdate: ''
     },
@@ -50,6 +50,14 @@ const SignupForm = () => {
         onChange={formik.handleChange}
         value={formik.values.password}
       />
+      <label htmlFor="phoneNo">PhoneNo</label>
+      <Input
+        id="phoneNo"
+        name="phoneNO"
+        type="number"
+        onChange={formik.handleChange}
+        value={formik.values.phoneNo}
+      />
    <label htmlFor="gender">Gender</label>
       <Input
         id="gender"
@@ -67,47 +75,3 @@ const SignupForm = () => {
 };
 
 export default SignupForm
-
-// import React, { useState } from 'react'
-// import {Badge, Avatar, Input} from "@nextui-org/react";
-// import {Card, CardHeader, CardBody, CardFooter, Divider, Image,RadioGroup, Radio} from "@nextui-org/react";
-// import Link from 'next/link';
-
-// const Register = () => {
-//   const [value, setValue] =useState(1)
-//   return (
-//     <div className='flex justify-center m-24'>
-//      <Card className="max-w-[400px]">
-//       <CardHeader className="flex gap-3">
-//         <img src='/hustle_logo.jpg' width={90} height={30}/>
-//         <div className="flex flex-col">
-//           <p className="text-md">REGISTER</p>
-//           <p className="text-small text-default-500">HUSTLE</p>
-//         </div>
-//       </CardHeader>
-//       <Divider/>
-//       <CardBody>
-//       <Input placeholder='enter your email'/><br/>
-//     <Input placeholder='enter your password' type='password'/><br/>
-//     <Input placeholder='enter your phone number'/><br/>
-//     <Input placeholder='enter your full name'/><br/>
-//     <RadioGroup
-//       label="Select gender"
-//     >
-//       <Radio value="buenos-aires">Male</Radio>
-//       <Radio value="sydney">Female</Radio>
-//       <Radio value="san-francisco">Others</Radio>
-//     </RadioGroup>
-//     <button className='bg-black p-2 m-2 text-white '>Register</button><br/>
-//       </CardBody>
-//       <Divider/>
-//       <CardFooter>
-//          Already have an account? <Link href='/'> Sign In </Link>  instead
-//       </CardFooter>
-//     </Card>
- 
-//     </div>
-//   )
-// }
-
-// export default Register
