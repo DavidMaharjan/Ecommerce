@@ -6,7 +6,6 @@ const userSchema = new Schema({
   phoneNO:Number,
   email:String,
   password:String,
-  confirmPassword: String,
   gender: {
     type: String,
     enum : ['Male','Female','Others'],
